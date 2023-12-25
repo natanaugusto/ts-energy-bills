@@ -1,0 +1,19 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true
+  },
+  "extends": "standard-with-typescript",
+  "plugins": ["prettier", "@typescript-eslint", "eslint-plugin-prettier"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "indent": "off",
+    "@typescript-eslint/indent": "error",
+    "space-before-function-paren": "off",
+    "@typescript-eslint/space-before-function-paren": "off"
+  }
+}

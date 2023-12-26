@@ -14,3 +14,10 @@ describe('Health Check Endpoint', () => {
     expect(response.status).toBe(HttpStatusCode.NO_CONTENT)
   })
 })
+
+describe('All bills', () => {
+  it('should return all clients and bills', async () => {
+    const response = await request(app).get('/all')
+    expect(response.status).toBe(HttpStatusCode.OK)
+  })
+})

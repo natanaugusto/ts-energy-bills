@@ -1,6 +1,7 @@
 import request from 'supertest'
 import { HttpStatusCode } from '@/enums'
 import { app, server } from '@/main'
+import { describe, it, expect, afterAll } from 'vitest'
 
 afterAll(async () => {
   if (server !== undefined) {
